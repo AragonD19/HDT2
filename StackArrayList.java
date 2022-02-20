@@ -1,8 +1,5 @@
 import java.util.ArrayList;
-/**
- * @author moises.alonso
- *
- */
+
 public class StackArrayList<T> implements IStack<T> {
 
 	private ArrayList<T> coreList;
@@ -11,6 +8,7 @@ public class StackArrayList<T> implements IStack<T> {
 		coreList = new ArrayList<T>();
 	}
 	
+
 	@Override
 	public void push(T value) {		
 		coreList.add(0, value);
